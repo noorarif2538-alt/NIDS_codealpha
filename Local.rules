@@ -1,0 +1,7 @@
+alert tcp any -> any 22 (
+msg:"SSH Brute Force Attack Detected"; 
+sid:1001; 
+rev:1; 
+classtype:attempted-admin; 
+priority:1;
+)
